@@ -1,6 +1,16 @@
 # Learning Modular Policy for Multi-Floor Object Navigation: A Factorized Framework for Diagnostic Study
 
 
+## Introduction
+
+Object-goal navigation (ObjectNav) in multi-floor scenarios presents a challenge due to sparse rewards caused by long-horizon decision-making. In this paper, we propose a diagnostic study based on a modular framework with an effective learnable policy to analyze failure factors in multi-floor scenarios. To achieve an effective policy for diagnosis, we design the hierarchical factorization policy that deconstructs a single global policy into an intra-floor exploration policy and an inter-floor switching policy. To providing an effective initialization for Reinforcement Learning (RL), the lightweight intra-floor policy is learned by distilling the exploration logic of Visual Language Models (VLMs). Under idealized assumptions, we show that the factorized policy is theoretically equivalent to a single global policy at the policy-representation level. Experiment results indicate that perception performance and stair climbing stability are the primary bottlenecks in multi-floor navigation.
+
+![Multi-floor ObjectNav framework](assets/fig2_0414.jpg)
+
+## Demos
+
+[Watch the demo video](demos/video_new_0721.mp4)
+
 ## Dependencies
 - cuda version:
 ```bash
